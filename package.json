@@ -70,7 +70,8 @@
     "react-dom": "^17.0.0",
     "react-helmet-async": "^1.0.4",
     "umi": "^3.5.0",
-    "umi-serve": "^1.9.10"
+    "umi-serve": "^1.9.10",
+    "umi-plugin-keep-alive": "^0.0.1-beta.29"
   },
   "devDependencies": {
     "@ant-design/pro-cli": "^2.0.2",
@@ -137,8 +138,5 @@
       "CNAME",
       "create-umi"
     ]
-  },
-  "gitHooks": {
-    "commit-msg": "fabric verify-commit"
   }
 }

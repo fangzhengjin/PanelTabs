@@ -23,6 +23,7 @@
     name: 'welcome',
     icon: 'smile',
     component: './Welcome',
+    wrappers: ['@/wrappers/PanelTabsWrapper.tsx'],
   },
   {
     path: '/admin',
@@ -30,6 +31,7 @@
     icon: 'crown',
     access: 'canAdmin',
     component: './Admin',
+    wrappers: ['@/wrappers/PanelTabsWrapper.tsx'],
     routes: [
       {
         path: '/admin/sub-page',
@@ -38,7 +40,9 @@
         component: './Welcome',
       },
       {
+        name: '页面未找到',
         component: './404',
+        wrappers: ['@/wrappers/PanelTabsWrapper.tsx'],
       },
     ],
   },
@@ -47,12 +51,15 @@
     icon: 'table',
     path: '/list',
     component: './TableList',
+    wrappers: ['@/wrappers/PanelTabsWrapper.tsx'],
   },
   {
     path: '/',
     redirect: '/welcome',
   },
   {
+    name: '页面未找到',
     component: './404',
+    wrappers: ['@/wrappers/PanelTabsWrapper.tsx'],
   },
 ];
