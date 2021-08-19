@@ -78,6 +78,22 @@
   },
 ];
  ```
+  - 当然也可以使用方法操作
+  ```ts
+  export const wrapperMixin = (routes: IBestAFSRoute[]) => {
+    return routes.map((x) => {
+      // 排除的根节点path
+      if (x.path === undefined || ['/', '/user'].includes(x.path)) {
+        return x;
+      }
+      x.wrappers = ['@/wrappers/PanelTabsWrapper.tsx'];
+      if (x.routes) {
+        x.routes = wrapperMixin(x.routes);
+      }
+      return x;
+    });
+  };
+  ```
   - 如果不想在页签下方显示标题和面包屑, 对PageContainer或PageHeaderWrapper进行设置
   ```tsx
     <>
