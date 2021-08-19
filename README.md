@@ -102,7 +102,7 @@ import React from 'react';
 import usePanelTab from '@/components/PanelTabs/PanelTabHook';
 
 export default () => {
-  const { closeCurrent } = usePanelTab();
+  const { close, closeCurrent, closeOther, refresh, refreshCurrent, closeAll } = usePanelTab();
   return (
     <Result
       status="404"
