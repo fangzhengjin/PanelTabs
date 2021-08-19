@@ -4,6 +4,8 @@
 
 [效果预览](https://vibrant-leakey-d5b34a.netlify.app/)
 
+![image](https://user-images.githubusercontent.com/12680972/130057577-324e835a-4a3d-407b-948c-00cf1793387a.png)
+
 ## 如何使用
  - 安装依赖 `umi-plugin-keep-alive`
  - 在 `app.tsx` 中将layout的disableContentMargin配置为true (根据实际项目调整, 如果正常显示可不配置)
