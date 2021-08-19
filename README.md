@@ -6,6 +6,8 @@
 
 ![image](https://user-images.githubusercontent.com/12680972/130057577-324e835a-4a3d-407b-948c-00cf1793387a.png)
 
+### 保姆级教程😝
+
 ## 如何使用
  - 安装依赖 `umi-plugin-keep-alive`
  - 在 `app.tsx` 中将layout的disableContentMargin配置为true (根据实际项目调整, 如果正常显示可不配置)
@@ -78,22 +80,6 @@
   },
 ];
  ```
-  - 当然也可以使用方法操作
-  ```ts
-  export const wrapperMixin = (routes: IBestAFSRoute[]) => {
-    return routes.map((x) => {
-      // 排除的根节点path
-      if (x.path === undefined || ['/', '/user'].includes(x.path)) {
-        return x;
-      }
-      x.wrappers = ['@/wrappers/PanelTabsWrapper.tsx'];
-      if (x.routes) {
-        x.routes = wrapperMixin(x.routes);
-      }
-      return x;
-    });
-  };
-  ```
   - 如果不想在页签下方显示标题和面包屑, 对PageContainer或PageHeaderWrapper进行设置
   ```tsx
     <>
