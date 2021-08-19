@@ -76,6 +76,18 @@
   },
 ];
  ```
+  - 如果不想在页签下方显示标题和面包屑, 对PageContainer或PageHeaderWrapper进行设置
+  ```tsx
+    <>
+      <PageContainer title={false} breadcrumb={undefined} />
+      <PageHeaderWrapper title={false} breadcrumb={undefined} />
+    </>
+  ```
+  - 想要面包屑出现在最上方? 在app.tsx中对layout进行配置
+  ```ts
+  headerContentRender: () => <ProBreadcrumb />
+  ```
+
   - 配置完成🎉
 
 ## 自定义场景使用
