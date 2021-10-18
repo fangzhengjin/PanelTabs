@@ -1,3 +1,7 @@
+# ‼️此仓库已归档, 已提供umi插件, 请使用 [umi-plugin-panel-tabs](https://github.com/fangzhengjin/umi-plugin-panel-tabs)
+
+---
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/10453ec4-945e-41c7-844e-4e7e6a2027b2/deploy-status)](https://app.netlify.com/sites/vibrant-leakey-d5b34a/deploys)
 
 基于umi-plugin-keep-alive实现的Tab页签
